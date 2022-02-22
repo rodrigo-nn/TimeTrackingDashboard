@@ -1,80 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Time tracking dashboard</title>
 </head>
+
 <body>
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <div class="box-1">
+      <div class="headBox">
+        <div class="profile">
+          <img src="./images/image-rodrigo.png" alt="">
+          <div class="profileID">
+            <p class="profileText">Report for</p>
+            <p class="profileName">Rodrigo Nogueira</p>
+          </div>
+        </div>
+        <div class="dataGroup">
+          <div class="highlight" id="dayTrack">Daily</div>
+          <div class="highlight" id="weekTrack">Weekly</div>
+          <div class="highlight" id="monthTrack">Monthly</div>
+        </div>
+      </div>
+    </div>
+    <div class="box-2">
+      <div class="bgHeadlines">
+        <div class="boxModel">
+          <div class="activityTitle">
+            <div>Work</div>
+            <img class="activityTitle-dots" src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="recordTime">
+            <div class="mainTime">5hrs</div>
+            <!--32hrs|Previous - 36hrs|103hrs|Previous - 128hrs-->
+            <div class="previousTime">Previous - 7hrs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box-3">
+      <div class="bgHeadlines">
+        <div class="boxModel">
+          <div class="activityTitle">
+            <div>Play</div>
+            <img class="activityTitle-dots" src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="recordTime">
+            <div class="mainTime">1hr</div>
+            <!--10hrs|Previous - 8hrs|23hrs|Previous - 29hrs-->
+            <div class="previousTime">Previous - 2hrs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box-4">
+      <div class="bgHeadlines">
+        <div class="boxModel">
+          <div class="activityTitle">
+            <div>Study</div>
+            <img class="activityTitle-dots" src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="recordTime">
+            <div class="mainTime">0hrs</div>
+            <!--4hrs|Previous - 7hrs|13hrs|Previous - 19hrs-->
+            <div class="previousTime">Previous - 1hr</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box-5">
+      <div class="bgHeadlines">
+        <div class="boxModel">
+          <div class="activityTitle">
+            <div>Exercise</div>
+            <img class="activityTitle-dots" src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="recordTime">
+            <div class="mainTime">1hr</div>
+            <!--4hrs|Previous - 5hrs|11hrs|Previous - 18hrs-->
+            <div class="previousTime">Previous - 1hr</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box-6">
+      <div class="bgHeadlines">
+        <div class="boxModel">
+          <div class="activityTitle">
+            <div>Social</div>
+            <img class="activityTitle-dots" src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="recordTime">
+            <div class="mainTime">1hr</div>
+            <!--5hrs|Previous - 10hrs|21hrs|Previous - 23hrs-->
+            <div class="previousTime">Previous - 3hrs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box-7">
+      <div class="bgHeadlines">
+        <div class="boxModel">
+          <div class="activityTitle">
+            <div>Self Care</div>
+            <img class="activityTitle-dots" src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="recordTime">
+            <div class="mainTime">0hrs</div>
+            <!--2hrs|Previous - 2hrs|7hrs|Previous - 11hrs-->
+            <div class="previousTime">Previous - 1hrs</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
